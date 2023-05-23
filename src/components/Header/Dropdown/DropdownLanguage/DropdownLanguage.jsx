@@ -7,7 +7,6 @@ import { Popover } from "antd";
 const DropdownLanguage = () => {
   const [open, setOpen] = useState(false);
   const [logo, setLogo] = useState(logoVN);
-  const [nameLanguage, setNameLanguage] = useState("Việt Nam");
 
   const handleOpenChange = (newOpen) => {
     setOpen(newOpen);
@@ -20,11 +19,9 @@ const DropdownLanguage = () => {
   const handleSetLanguage = (name) => {
     if (name === "vietnam") {
       setLogo(logoVN);
-      setNameLanguage("Việt Nam");
       hide();
     } else {
       setLogo(logoUS);
-      setNameLanguage("US");
       hide();
     }
   };
@@ -44,7 +41,6 @@ const DropdownLanguage = () => {
     >
       <p className="flex items-center content-drop-language">
         <img src={logo} alt="" />
-        <span>{nameLanguage}</span>
       </p>
     </Popover>
   );
