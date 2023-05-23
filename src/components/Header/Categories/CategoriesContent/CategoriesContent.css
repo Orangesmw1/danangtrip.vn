@@ -1,0 +1,28 @@
+.modal-categories .ant-modal-footer button:nth-child(2) {
+    display: none !important;
+}
+
+.modal-categories .ant-modal-content .ant-modal-close {
+    /* display: none !important; */
+
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.modal-categories .ant-modal-content .ant-modal-close svg {
+    width: 20px;
+    height: 20px;
+}
+
+.modal-categories .ant-modal-content .ant-modal-footer {
+    display: none !important;
+}
+
+.modal-categories {
+    width: 60vw !important;
+}
+
+.modal-categories .ant-tabs .ant-tabs-ink-bar {
+    background: rgb(251 146 60) !important; 
+    width: 5px !important;
+}

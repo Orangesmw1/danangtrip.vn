@@ -1,0 +1,211 @@
+.header .container {
+    border-bottom: 1px solid rgb(231, 229, 229);;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+}
+
+/* header left  */
+
+.box-header-left {
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-logo span {
+    display: inline-block;
+    
+    font-size: 1.5rem;
+}
+
+.logo {
+    padding-bottom: 10px;
+}
+
+.header-search .ant-input::placeholder {
+    font-weight: 600 !important;
+
+}
+
+
+.header-search input {
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+
+    color: grey  !important;
+}
+
+.header-search .ant-input-group-addon {
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+
+.header-search  button {
+    height: 31px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+
+.header-search  button svg {
+    margin-bottom: 3px;
+}
+
+.name-company {
+    padding: 0 15px 0 5px;
+
+    font-weight: 600;
+}
+
+.name-company:hover ,.logo:hover  {
+    cursor: pointer;
+}
+
+/* header right  */
+.box-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.box-header-right ul {
+    display: flex;
+    align-items: center;
+}
+
+
+.box-header-right ul li {
+    display: inline-block;
+
+    padding-left: 15px;
+    
+    color: grey;
+    font-weight: 400;
+
+}
+
+.box-header-right ul li:hover {
+    cursor: pointer;
+}
+
+.header-change-language {
+    border: 2px solid transparent;
+
+    padding: 5px 7px !important;
+}
+
+/* .header-change-language:hover {
+    border: 2px solid gainsboro;
+    border-radius: 7px;
+} */
+
+/* .ant-dropdown-menu {
+    top: 10px !important;
+} */
+
+.header-change-language img {
+    width: 30px;
+    height: 100%;
+}
+
+.content-drop-language:hover {
+    cursor: pointer;
+}
+
+.content-drop-language img {
+    width: 20px !important;
+}
+
+.content-drop-language span {
+    padding-left: 10px;
+    font-weight: 400;
+    color: grey;
+
+}
+
+.header-change-money {
+    padding-left: 5px !important;
+}
+
+.header-change-money svg {
+    height: 15px;
+    padding-bottom: 5px;
+}
+
+.content-drop-coin {
+    color: grey;
+
+}
+
+
+.header-open-app, .header-help , .header-btn-register {
+    position: relative;
+}
+
+.header-open-app::after ,.header-help::after , .header-btn-register::after {
+    content: "";
+    
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    
+    width: 0;
+    height: 1px;
+
+    background-color: #f46b45;
+
+    transition: linear 0.2s;
+}
+
+.header-open-app:hover::after ,.header-help:hover::after , .header-btn-register:hover::after{
+    width: 85%;
+
+}
+
+
+.header-btn-login {
+    padding: 8px 15px !important;
+    margin-left: 10px;
+
+    background-image: linear-gradient(to right,#f46b45,#eea849);
+    color: #fff !important;
+
+    border-radius: 20px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.header-btn-login::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -50%;
+
+    width: 100%;
+    height: 5px;
+    background-color: #fffffff2;
+
+    transform: rotate(120deg);
+    transition: all linear 0.5s;
+}
+
+.header-btn-login:hover::after {
+    left: 150%;
+
+}

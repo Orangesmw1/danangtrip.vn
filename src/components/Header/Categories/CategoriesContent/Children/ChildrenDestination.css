@@ -1,0 +1,39 @@
+.modal-categories .ant-tabs-content-holder .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+    width: 20px !important;
+    display: none !important;
+}
+
+.modal-categories .ant-tabs-content-holder .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active {
+    background-color:rgb(251 146 60) ;
+    border-radius: 20px;
+    padding: 2px 5px !important;
+    height: 40px;
+
+
+}
+
+.modal-categories .ant-tabs-content-holder .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab:hover{
+    color: black !important;
+}
+
+
+.modal-categories .ant-tabs-content-holder .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-btn:active {
+    color: #fff !important;
+
+}
+
+.modal-categories .ant-tabs-content-holder .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab {
+    padding: 5px 2px !important;
+    width: 100px;
+    border-radius: 20px;
+
+    transition: all linear 1s;
+    
+}
+
+.modal-categories .ant-tabs-content-holder .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn  {
+    color:  white;
+    /* background-color:rgb(251 146 60) ; */
+    border-radius: 20px;
+
+}

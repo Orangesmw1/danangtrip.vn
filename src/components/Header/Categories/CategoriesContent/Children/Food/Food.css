@@ -1,0 +1,29 @@
+.food {
+    height: 100px;
+}
+
+.food ul {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.food ul li {
+    font-weight: 500 !important;
+    color: grey;
+
+    padding: 5px;
+
+}
+
+.food ul li:hover {
+    background-color: gray ;
+    color: white;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
