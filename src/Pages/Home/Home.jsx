@@ -1,11 +1,11 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { usersState$ } from "../../redux/selectors";
+import React, { useEffect } from "react";
 
 const Home = () => {
-  const listUser = useSelector(usersState$);
-
-  return <div>Home</div>;
+  return (
+    <div>
+      <button>login</button>
+    </div>
+  );
 };
 
 export default Home;

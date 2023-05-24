@@ -1,0 +1,17 @@
+
+.popeverContentUser ul li {
+    text-align: center;
+    font-weight: 500;
+    color: rgb(123, 121, 121);
+    padding: 3px;
+}
+
+.popeverContentUser ul li:first-child {
+    margin-bottom: 5px;
+}
+
+.popeverContentUser ul li:hover {
+    background-color: rgb(251 146 60 );
+    cursor: pointer;
+    color: #fff;
+}

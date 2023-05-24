@@ -1,24 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
-import { Outlet } from "react-router-dom";
 
-const Company = () => {
-  // useEffect(() => {
-  //   const callApi = async () => {
-  //     const res = await axios.get("http://localhost:8000/v1/user/");
+const Layout = ({ children }) => {
+  const userLoginLocal = JSON.parse(localStorage.getItem("userLogin"));
+  const [isLogin, setIsLogin] = useState(false);
 
-  //     console.log(res);
-  //   };
-
-  //   callApi();
-  // }, []);
+  useEffect(() => {
+    userLoginLocal ? setIsLogin(true) : setIsLogin(false);
+  }, [userLoginLocal]);
 
   return (
     <div className="font-serif">
-      <Header />
-      <Outlet />
+      <Header isLogin={isLogin} />
+      {children}
     </div>
   );
 };
 
-export default Company;
+export default Layout;
