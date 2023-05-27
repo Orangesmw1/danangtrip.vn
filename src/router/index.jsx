@@ -36,7 +36,7 @@ const routers = createBrowserRouter([
         <DetailDestinations />
       </Layout>
     ),
-    path: "/detaildestination/:id",
+    path: "/detaildestinations/:id",
   },
 ]);
 

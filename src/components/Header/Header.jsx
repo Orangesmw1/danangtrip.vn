@@ -8,9 +8,31 @@ import SearchHeader from "./Search/SearchHeader";
 import { NavLink } from "react-router-dom";
 import Categories from "./Categories/Categories";
 import PopeverContentUser from "./PopeverContentUser/PopeverContentUser";
+import axios from "axios";
 
-const Header = ({ isLogin }) => {
-  console.log("isLogin", isLogin);
+const Header = () => {
+  const userLoginLocal = JSON.parse(localStorage.getItem("userLogin"));
+  const [dataUserLogin, setDataUserLogin] = useState(null);
+
+  useEffect(() => {
+    if (userLoginLocal) {
+      fetchUserLogin();
+    }
+  }, [userLoginLocal]);
+
+  const fetchUserLogin = async () => {
+    const { access_token } = userLoginLocal;
+    const res = await axios.get("http://localhost:5000/api/v1/user", {
+      headers: {
+        Authorization: `${access_token}`,
+      },
+    });
+
+    if (res.data) {
+      setDataUserLogin(res.data);
+    }
+  };
+
   return (
     <div className="header">
       <div className="container mx-auto px-20">
@@ -40,8 +62,11 @@ const Header = ({ isLogin }) => {
               <li className="header-open-app">Mở ứng dụng</li>
               <li className="header-help">Trợ giúp</li>
 
-              {isLogin ? (
-                <li>
+              {userLoginLocal ? (
+                <li className="box-name-user ">
+                  <p className="inline-block pr-2 ">
+                    {dataUserLogin?.userData?.name}
+                  </p>
                   <Popover content={<PopeverContentUser />} trigger="click">
                     <UserOutlined
                       className="pb-2"

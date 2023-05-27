@@ -209,3 +209,9 @@ header {
     left: 150%;
 
 }
+
+.header .box-name-user {
+    display: flex !important;
+    align-items: center;
+    
+}

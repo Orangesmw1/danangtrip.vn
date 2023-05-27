@@ -3,14 +3,21 @@ import { useForm } from "react-hook-form";
 import "./Login.css";
 import { EyeInvisibleOutlined, EyeOutlined } from "@ant-design/icons";
 import { useDispatch, useSelector } from "react-redux";
-import { loginUser } from "../../redux/slice/userSlice";
+import { loginUser, notify } from "../../redux/slice/userSlice";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  // const userRegister = useSelector((state) => state.user.userRegister);
 
   const [isShowPass, setIsShowPass] = useState(false);
   const [typePass, setTypePass] = useState("password");
@@ -40,8 +47,16 @@ const Login = () => {
       .then((response) => {
         if (response.data.access_token) {
           dispatch(loginUser(response.data));
-          navigate("/");
+          setTimeout(() => {
+            navigate("/");
+          }, 1500);
           localStorage.setItem("userLogin", JSON.stringify(response.data));
+        } else {
+          if (response.data.mes === "Password wrong") {
+            notify("error", "Sai mật khẩu");
+          } else {
+            notify("error", "Tài khoản không tồn tại");
+          }
         }
       });
   };
@@ -55,26 +70,45 @@ const Login = () => {
       <div className="title-login">
         <h2>Đăng nhập tài khoản</h2>
       </div>
-
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register("email")} placeholder="Email" />
+        <input
+          {...register("email", {
+            required: true,
+            pattern: new RegExp("gmail.com$"),
+          })}
+          placeholder="Email"
+        />
+        {errors.email?.type === "required" && (
+          <span className="error"> Không được để trống email</span>
+        )}
+        {errors.email?.type === "pattern" && (
+          <span className="error">Vui lòng nhập đúng định dạng @gmail.com</span>
+        )}
+
         <div className="form-password">
           <input
-            {...register("password")}
+            {...register("password", { required: true, minLength: 6 })}
             placeholder="Mật khẩu"
             type={typePass}
           />
-
           {!isShowPass ? (
             <EyeInvisibleOutlined onClick={() => handleShowPass(true)} />
           ) : (
             <EyeOutlined onClick={() => handleShowPass(false)} />
           )}
         </div>
+        {errors.password?.type === "required" && (
+          <span className="error"> Không được để trống mật khẩu</span>
+        )}
+        {errors.password?.type === "minLength" && (
+          <span className="error"> Tối đa 6 kí tự</span>
+        )}
+
         <div className="btn">
           <input type="submit" value="Đăng nhập" className="btn-login" />
         </div>
       </form>
+      <ToastContainer />;
     </div>
   );
 };
