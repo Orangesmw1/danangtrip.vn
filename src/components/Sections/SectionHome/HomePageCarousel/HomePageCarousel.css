@@ -1,0 +1,99 @@
+.carousel-homepage .container {
+    padding-bottom: 20px;
+}
+
+
+.carousel-homepage .box-video {
+    height: 75vh;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.carousel-homepage .box-video video {
+    position: relative;
+    top: -15%;
+
+}
+
+.carousel-homepage .box-search {
+    position: absolute;
+    top: 17%;
+    left: 10%;
+
+    width: 100%;
+    padding: 50px 20px;
+
+    z-index: 100;
+    border-radius: 20px;
+
+}
+
+.input-search-carousel {
+    width: 650px !important;
+}
+
+.input-search-carousel .ant-input{
+    height: 40px !important;
+}
+
+.input-search-carousel .ant-input-group-addon .ant-input-search-button {
+    background-image: linear-gradient(to right,#f46b45,#eea849);
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.input-search-carousel .ant-input-group-addon .ant-input-search-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    z-index: 100;
+    transform: rotate(120deg);
+    transition: all linear 0.6s;
+
+}
+
+.input-search-carousel .ant-input-group-addon .ant-input-search-button:hover::after {
+    left: 150%;
+}
+
+
+.input-search-carousel .ant-btn-primary:not(:disabled):hover {
+    background-color: transparent !important;
+}
+
+.box-search h5 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box-search p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.box-search .search-carousel {
+    border: 2px solid black;
+}
+
+.overlay-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.052);
+    z-index: 90;
+}

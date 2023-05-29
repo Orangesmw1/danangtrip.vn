@@ -14,7 +14,7 @@ const DetailDestinations = () => {
 
   return (
     id && (
-      <div>
+      <div className="mt-20">
         <h1>abc {id} </h1>
       </div>
     )

@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       serif: "Source Serif Pro",
+      sanSerif: "Impact,Haettenschweiler,Arial Narrow Bold,sans-serif;",
     },
     extend: {},
   },

@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
+import SectionHome from "../../components/Sections/SectionHome/SectionHome";
 
 const Home = () => {
   return (
     <div>
-      <button>login</button>
+      <SectionHome />
     </div>
   );
 };

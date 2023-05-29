@@ -1,5 +1,11 @@
 .header .container {
-    border-bottom: 1px solid rgb(231, 229, 229);;
+    border-bottom: 1px solid rgb(231, 229, 229);
+
+    position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  z-index: 105;
 
 }
 
@@ -9,6 +15,7 @@ header {
     align-items: center;
 
     height: 60px;
+
 }
 
 /* header left  */
