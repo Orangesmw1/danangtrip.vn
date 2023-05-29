@@ -13,8 +13,8 @@ const PopeverContentUser = () => {
   return (
     <div className="popeverContentUser">
       <ul>
-        <li>Info</li>
-        <li onClick={handleLogout}>Logout</li>
+        <li>Thông tin</li>
+        <li onClick={handleLogout}>Thoát</li>
       </ul>
     </div>
   );

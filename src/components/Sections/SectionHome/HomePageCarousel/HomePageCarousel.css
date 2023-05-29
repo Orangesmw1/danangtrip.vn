@@ -12,6 +12,7 @@
 
 .carousel-homepage .box-video video {
     position: relative;
+    width: 100%;
     top: -15%;
 
 }
