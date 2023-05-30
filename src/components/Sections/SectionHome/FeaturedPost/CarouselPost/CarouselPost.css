@@ -1,0 +1,44 @@
+
+
+.carousel-featured-post .box-clone ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-featured-post .box-clone ul li {
+    width: 23%;
+    height: 200px;
+
+    position: relative;
+}
+
+.carousel-featured-post .box-clone ul li .img-background {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+}
+
+
+
+.carousel-featured-post .box-clone ul li .img-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #fff;
+    border-radius: 20px;
+    width: 170px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.carousel-featured-post .box-clone ul li .img-button:hover {
+    width: 190px;
+    cursor: pointer;
+}
+
+
+
+

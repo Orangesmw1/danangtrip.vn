@@ -2,13 +2,17 @@ import React from "react";
 import HomePageCarousel from "./HomePageCarousel/HomePageCarousel";
 import FeaturedPost from "./FeaturedPost/FeaturedPost";
 import DestionationsHompage from "./DestinationsHomepage/DestionationsHompage";
+import FeaturedTours from "./FeaturedTours/FeaturedTours";
+import FeaturedTickets from "./FeaturedTickets/FeaturedTickets";
 
 const SectionHome = () => {
   return (
-    <div className="container mx-auto px-20 mt-12">
+    <div className="container  mt-12">
       <HomePageCarousel />
       <DestionationsHompage />
       <FeaturedPost />
+      <FeaturedTickets />
+      <FeaturedTours />
     </div>
   );
 };

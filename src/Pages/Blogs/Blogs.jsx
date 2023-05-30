@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-const DetailDestinations = () => {
+const Blogs = () => {
   // Dùng ID để show content trang page riêng về đà nẵng
 
   const param = useParams();
@@ -21,4 +21,4 @@ const DetailDestinations = () => {
   );
 };
 
-export default DetailDestinations;
+export default Blogs;

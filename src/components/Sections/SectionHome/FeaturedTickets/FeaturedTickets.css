@@ -1,0 +1,94 @@
+
+.featured-ticket .carousel h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.featured-ticket .box-show {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-ticket .box-show .box-ticket {
+    width: 32%;
+    height: 400px;
+
+    background-image: linear-gradient(to top,#f46b4565,#eea949c6);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-ticket .box-show .box-ticket:hover {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.119);
+}
+
+.featured-ticket .box-show .box-ticket .title-content {
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 88%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+.featured-ticket .box-show .box-content {
+    padding-top: 20px;
+}
+
+.featured-ticket .box-show .box-content ul li {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 30px;
+}
+
+.featured-ticket .box-show .box-content ul li:hover {
+    cursor: pointer;
+}
+
+.featured-ticket .box-show .box-content ul li img {
+    width: 20%;
+    height: 70px;
+    object-fit: cover;
+
+    border-radius: 10px;
+    box-shadow:  3px 3px rgba(0, 0, 0, 0.208);;
+}
+
+.featured-ticket .box-show .box-content ul li span {
+    width: 75%;
+}
+
+.featured-ticket .box-show .box-content ul li span p {
+    font-size: 1rem;
+}
+
+.featured-ticket .box-show .box-content ul li span p:last-child {
+    color: rgb(235, 102, 19);
+    
+} 
+
+.featured-ticket .box-more {
+    text-align: center;
+    padding-top: 25px;
+
+    height: 60px;
+}
+
+.featured-ticket .box-more .btn-more{
+    
+    padding: 5px 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    font-weight: 600;
+}
+
+.featured-ticket .box-more .btn-more:hover {
+    padding: 7px 55px;
+}

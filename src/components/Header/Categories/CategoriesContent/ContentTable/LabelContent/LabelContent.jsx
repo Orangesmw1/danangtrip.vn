@@ -12,11 +12,7 @@ const LabelContent = (props) => {
       <span className="title-label">{nameDestination}</span>
 
       <button>
-        <NavLink
-          to={`/detaildestinations/${id}`}
-          className="detail"
-          onClick={handleCancel}
-        >
+        <NavLink to={`/blogs/${id}`} className="detail" onClick={handleCancel}>
           Chi tiết
         </NavLink>
       </button>

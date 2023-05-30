@@ -3,7 +3,7 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Layout from "../Layout";
 import Register from "../Pages/Register/Register";
-import DetailDestinations from "../Pages/DetailDestinations/DetailDestinations";
+import Blogs from "../Pages/Blogs/Blogs";
 
 const routers = createBrowserRouter([
   {
@@ -33,10 +33,10 @@ const routers = createBrowserRouter([
   {
     element: (
       <Layout>
-        <DetailDestinations />
+        <Blogs />
       </Layout>
     ),
-    path: "/detaildestinations/:id",
+    path: "/blogs/:id",
   },
 ]);
 

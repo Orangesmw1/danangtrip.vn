@@ -6,7 +6,12 @@ export default {
       serif: "Source Serif Pro",
       sanSerif: "Impact,Haettenschweiler,Arial Narrow Bold,sans-serif;",
     },
-    extend: {},
+
+    extend: {
+      colors: {
+        blackPanel: "#353535",
+      },
+    },
   },
   plugins: [],
 };

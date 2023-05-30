@@ -1,0 +1,98 @@
+.featured-tour {
+    padding: 100px 0 60px;
+}
+
+.featured-tour .carousel h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.featured-tour .card-form {
+    border-color: #cbcdd1 !important;
+}
+
+.featured-tour .card-form h6{
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.featured-tour .card-form h4{
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    padding: 2px 0 10px;
+}
+
+.featured-tour .box-favorite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    background-color: rgba(125, 123, 123, 0.662);
+    color: white;
+    border-radius: 20px;
+    width: 60px;
+    height: 30px;
+}
+
+.featured-tour .box-favorite span svg{
+    width: 20px;
+    height: 15px;
+}
+
+.featured-tour .box-price {
+    display: block;
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.featured-tour .box-price span {
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
+
+.featured-tour .box-other {
+    display: flex;
+    align-items: center ;
+
+}
+
+.featured-tour .box-other .box-discount {
+    width: 60px;
+    height: 30px;
+    background-color: rgba(125, 123, 123, 0.662);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.featured-tour .box-more {
+    text-align: center;
+    padding-top: 25px;
+
+    height: 60px;
+}
+
+
+.featured-tour .box-more .btn-more{
+    
+    padding: 5px 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    font-weight: 600;
+}
+
+.featured-tour .box-more .btn-more:hover {
+    padding: 7px 55px;
+}
+
